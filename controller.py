@@ -5,7 +5,7 @@ screenColor = (0, 0, 0)
 circColor = (255, 255, 255)
 rectColor = (0, 255, 21)
 rectSpeed = 7
-
+ 
     
 class Controller:
     def __init__(self, v):
@@ -80,7 +80,7 @@ class Controller:
             self.view.drawRect(rectColor, p1.getObj())
             self.view.drawRect(rectColor, p2.getObj())
             self.view.drawCirc(circColor, ball.getCords())
-            
+            self.view.drawRect(rectColor, ball.getObj())
             self.view.update()
             self.clock.tick(60)
             

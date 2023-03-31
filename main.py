@@ -7,3 +7,4 @@ from view import View
 v = View()
 c = Controller(v)
 c.startGame()
+ 
